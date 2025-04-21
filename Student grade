@@ -1,0 +1,15 @@
+class StudentGrade {
+    String name;
+    int[] marks;
+
+    StudentGrade(String name, int[] marks) {
+        this.name = name;
+        this.marks = marks;
+    }
+
+    double calculateAverage() {
+        int sum = 0;
+        for (int mark : marks) sum += mark;
+        return sum / (double) marks.length;
+    }
+}
