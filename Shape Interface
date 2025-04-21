@@ -1,0 +1,22 @@
+interface Shape {
+    double area();
+}
+class Rectangle implements Shape {
+    int l, b;
+    Rectangle(int l, int b) {
+        this.l = l;
+        this.b = b;
+    }
+    public double area() {
+        return l * b;
+    }
+}
+class Circle implements Shape {
+    double r;
+    Circle(double r) {
+        this.r = r;
+    }
+    public double area() {
+        return Math.PI * r * r;
+    }
+}
