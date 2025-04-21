@@ -1,0 +1,14 @@
+class Customer {
+    String name;
+    double balance;
+    Customer(String name, double balance) {
+        this.name = name;
+        this.balance = balance;
+    }
+    void deposit(double amount) {
+        balance += amount;
+    }
+    void showBalance() {
+        System.out.println(name + " has ₹" + balance + " in the account");
+    }
+}
