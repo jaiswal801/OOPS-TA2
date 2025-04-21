@@ -1,0 +1,17 @@
+interface Musician {
+    void play();
+}
+
+interface Dancer {
+    void perform();
+}
+
+class Artist implements Musician, Dancer {
+    public void play() {
+        System.out.println("Playing music");
+    }
+
+    public void perform() {
+        System.out.println("Performing dance");
+    }
+}
