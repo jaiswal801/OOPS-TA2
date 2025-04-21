@@ -1,0 +1,19 @@
+abstract class User {
+    String username;
+
+    User(String username) {
+        this.username = username;
+    }
+
+    abstract void accessPortal();
+}
+
+class Student extends User {
+    Student(String username) {
+        super(username);
+    }
+
+    void accessPortal() {
+        System.out.println(username + " accesses student portal");
+    }
+}
