@@ -1,0 +1,11 @@
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle is starting");
+    }
+}
+
+class CarInheritance extends Vehicle {
+    void openDoor() {
+        System.out.println("Car door opened");
+    }
+}
