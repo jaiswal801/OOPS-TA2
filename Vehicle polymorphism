@@ -1,0 +1,15 @@
+class Vehicle {
+    void move() {
+        System.out.println("Vehicle is moving");
+    }
+}
+class Bike extends Vehicle {
+    void move() {
+        System.out.println("Bike is running");
+    }
+}
+class Truck extends Vehicle {
+    void move() {
+        System.out.println("Truck is hauling");
+    }
+}
