@@ -1,0 +1,12 @@
+class RectangleArea {
+    int length, width;
+
+    RectangleArea(int length, int width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    int area() {
+        return length * width;
+    }
+}
