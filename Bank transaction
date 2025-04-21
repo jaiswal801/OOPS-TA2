@@ -1,0 +1,20 @@
+class BankTransaction {
+    private double balance = 1000;
+
+    void withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrawn: " + amount);
+        } else {
+            System.out.println("Insufficient funds");
+        }
+    }
+
+    void deposit(double amount) {
+        balance += amount;
+    }
+
+    double getBalance() {
+        return balance;
+    }
+}
