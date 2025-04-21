@@ -1,0 +1,14 @@
+import java.util.*;
+class Employee {
+    int id;
+    String name;
+    Employee(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+class CompareById implements Comparator<Employee> {
+    public int compare(Employee e1, Employee e2) {
+        return e1.id - e2.id;
+    }
+}
