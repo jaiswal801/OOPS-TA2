@@ -1,0 +1,17 @@
+class BankAccount {
+    private String accountHolder;
+    private double balance;
+
+    BankAccount(String name, double balance) {
+        this.accountHolder = name;
+        this.balance = balance;
+    }
+
+    void deposit(double amount) {
+        balance += amount;
+    }
+
+    double getBalance() {
+        return balance;
+    }
+}
