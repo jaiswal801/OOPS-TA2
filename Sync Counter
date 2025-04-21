@@ -1,0 +1,16 @@
+class Counter {
+    int count = 0;
+    synchronized void increment() {
+        count++;
+    }
+}
+class ThreadSyncCounter extends Thread {
+    Counter c;
+    ThreadSyncCounter(Counter c) {
+        this.c = c;
+    }
+    public void run() {
+        for (int i = 0; i < 1000; i++)
+            c.increment();
+    }
+}
