@@ -1,0 +1,16 @@
+import java.io.;
+class FileReadWriteDemo {
+    void write(String text) throws IOException {
+        FileWriter fw = new FileWriter("data.txt");
+        fw.write(text);
+        fw.close();
+    }
+
+    void read() throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("data.txt"));
+        String line;
+        while ((line = br.readLine()) != null)
+            System.out.println(line);
+        br.close();
+    }
+}
