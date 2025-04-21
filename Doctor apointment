@@ -1,0 +1,22 @@
+class Doctor {
+    String name;
+    String specialization;
+    Doctor(String name, String specialization) {
+        this.name = name;
+        this.specialization = specialization;
+    }
+    void diagnose() {
+        System.out.println(name + " diagnoses as a " + specialization);
+    }
+}
+class Appointment {
+    Doctor doctor;
+    String patientName;
+    Appointment(Doctor doctor, String patientName) {
+        this.doctor = doctor;
+        this.patientName = patientName;
+    }
+    void book() {
+        System.out.println("Appointment booked with Dr. " + doctor.name + " for " + patientName);
+    }
+}
