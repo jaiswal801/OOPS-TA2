@@ -1,0 +1,15 @@
+class BookDetails {
+    String title;
+    String author;
+    int pages;
+
+    BookDetails(String title, String author, int pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+
+    void display() {
+        System.out.println(title + " by " + author + " - " + pages + " pages");
+    }
+}
